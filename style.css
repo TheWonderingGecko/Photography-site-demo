@@ -1,0 +1,588 @@
+:root{
+    --white: rgb(255, 255, 255);
+    --slight-white: rgb(192, 186, 186);
+    --black: rgb(45, 44, 44);
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sono', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color:  var(--black) ;
+    color: var(--white);
+    
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+    
+    @keyframes fadeInAnimation {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+            }
+    }
+
+
+h1,h2,a{
+    text-transform: uppercase;
+}
+
+.head-wrapper{
+    background-image: url(/Images/jahmir.jpeg);
+    filter: grayscale(40%);
+    height: 100vh;
+    background-size: cover;
+    background-position-y: center;
+    
+    position: relative;
+    z-index: 503;
+    
+}
+
+
+
+.Title{
+    margin-left: 2vw;
+
+}
+
+
+
+.nav-background{
+    background-color: black;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 8vh;
+    z-index: 502;
+   
+}
+
+.nav{
+
+    color: white ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2vw;
+  
+    z-index: 505;
+    position: fixed;
+    top:0;
+    width: 100%;
+   
+    
+}
+
+
+
+.nav-tabs{
+    display: flex;
+    list-style: none;
+    column-gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    
+    margin-right: 2vw;
+   
+    
+}
+
+.nav-tabs a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    
+
+}
+.Nav-items:hover{
+    transform: translate(0,5px);
+}
+
+.Nav-items a:hover{
+    text-decoration: underline;
+    
+}
+/* Header items end*/
+
+/* about me section  start*/
+.about-head{
+    filter: grayscale(40%);
+    height: 100vh;
+    position: relative;
+    z-index: 503;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.about-head img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    border: none;
+}
+
+.about-head h1{
+    position: absolute;
+    top:40vh;
+    color: white;
+}
+
+.about-head label{
+    position: absolute;
+}
+
+.About-me{
+    
+    color: black;
+    font-weight: bolder;
+    
+    
+}
+
+.nav-about{
+    color: black;
+    
+    
+}
+
+.nav-about a{
+    color: black;
+}
+
+.about-head label{
+    font-size: x-large;
+    
+    padding: 1rem;
+}
+
+
+
+.about-main{
+    height: fit-content;
+    background-color: black;
+}
+
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.about-wrapper img{
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.about-wrapper p{
+    width: 70%;
+    line-height: 5vh;
+}
+
+.about-content{
+    width: 50%;
+}
+
+.about-content h2{
+    margin-bottom: 10vh;
+}
+
+
+
+/* end of section start */
+
+/* portfolio page start */
+.port-head{
+    
+    filter: grayscale(40%);
+    height: 100vh;
+    position: relative;
+    z-index: 503;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.port-head img{
+    object-fit: cover;
+    opacity: .5;
+    border: none;
+}
+
+.port-head label{
+    font-size: xx-large;
+    font-weight: 900;
+    opacity: .9;
+    position: absolute;
+}
+
+
+
+.portfolio-main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-main a{
+    width: fit-content;
+}
+
+.protfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));;
+    align-items: stretch;
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    gap:10px;
+    background-color: black;
+    padding: 0 10%;
+    padding-top: 10%;
+  }
+
+  img {
+    border: 1px solid white;
+    max-width: 100%;
+  }
+
+.tall{
+    grid-row: span 2;
+}
+
+.wide{
+    grid-column: span 2;
+}
+
+.port-sub{
+    position: absolute;
+    left:45%;
+   
+    
+}
+
+.div-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 5vh 0;
+}
+
+.div-contact button{
+    
+        width: 20vw;
+        margin-top: 2vh;
+        height: 10vh;
+        font-size: x-large;
+        background-color: rgb(1, 247, 255);
+        border-color:     rgb(11, 175, 180);
+        color: black;
+        outline: none;
+        cursor: pointer;  
+        border-radius: .3rem;
+}
+    
+.div-contact button:hover,.div-contact button:focus{
+     background-color: rgb(25, 234, 241);
+    box-shadow: 0 0 5px 0 rgb(12, 186, 192);
+}
+
+
+/* portfolio page end*/
+
+
+
+/* Pricing items start */
+main{
+    z-index: 200;
+}
+.pricing-section{
+    
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   background-color: grey;
+   align-items: center;
+   flex-direction: column;
+}
+
+.sub-title{
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+    
+    
+}
+
+.card-wrapper{
+   display: flex;
+   
+   justify-content: center;
+   height: fit-content;
+ 
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.pricing{
+    background-color: rgb(1, 247, 255);
+    border: 2px solid black;
+    border-radius: .3rem;
+    padding: 1rem;
+    margin: 1rem 0;
+   
+    
+}
+
+.side-left{
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.side-right{
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.prime{
+    margin: 0;
+    background-color: var(--white);
+    
+}
+.prime h3,.prime label,.prime p{
+    color: var(--black);
+}
+    
+
+
+.standard{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features{
+    text-align: center;
+}
+
+.standard h3{
+    
+    margin-bottom: 2vh;
+    font-size: xx-large;
+}
+
+
+.standard label{
+   
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+}
+
+.standard label::after{
+    content: ".00";
+    font-size: small;
+    
+}
+
+.features{
+    font-size: larger;
+    text-align: left;
+}
+
+.features p{
+    margin-bottom: 1rem;
+}
+
+/* end of pricing section */
+
+/* start of Contact section */
+.Contact{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+    
+}
+
+.Contact h2{
+    margin-top: 8vh;
+}
+.Contact form{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: x-large;
+    font-weight: bolder;
+    
+    
+}
+.intro-contact{
+    color: rgb(1, 247, 255);
+    margin-bottom: 5vh;
+}
+.contact-title p{
+    width: 80%;
+    font-size: large;
+    text-align: left;
+}
+.Contact input{
+    font-size: x-large;
+    height: 10vh;
+    
+   
+}
+
+.form {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.space{
+    margin-bottom: 5vh;
+}
+
+.question{
+    margin-top: 3vh;
+    font-size: larger;
+    font-weight: bold;
+}
+.radio{
+    width: fit-content;
+    padding: 0;
+    margin-bottom: 0;
+    height: fit-content;
+    border: none;
+    
+}
+
+.radios{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+}
+
+.radios span{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+
+}
+
+.portrait::after{
+content: "Portrait";
+color: white;
+margin-left: 2vh;
+font-size: larger;
+font-weight: 100;
+}
+
+.group::after{
+    content: "Group";
+    color: white;
+    margin-left: 2vh;
+    font-size: larger;
+    font-weight: 100;
+    }
+
+.pet::after{
+    content: "Pet";
+    color: white;
+    margin-left: 2vh;
+    font-size: larger;
+    font-weight: 100;
+    }
+
+form .submit{
+    width: 20vw;
+    margin-top: 2vh;
+    height: 5vh;
+    font-size: large;
+    background-color: rgb(1, 247, 255);
+    border-color:     rgb(11, 175, 180);
+    color: black;
+    outline: none;
+    cursor: pointer;  
+    border-radius: .3rem;
+}
+
+form .submit:hover,form .submit:focus{
+    background-color: rgb(25, 234, 241);
+    box-shadow: 0 0 5px 0 rgb(12, 186, 192);
+}
+/* about me end */
+
+/* footer start */
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.Socials{
+    border-top: 1px solid white;
+    padding: 1rem;
+    display: flex;
+    column-gap: 2rem;
+    
+}
+
+.fa-brands{
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.fa-brands:hover{
+    transform: translate(0,-5px);
+    color: rgb(139, 135, 135);
+}
+
+/* footer end */
