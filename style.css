@@ -515,7 +515,7 @@ main{
 }
 
 .portrait::after{
-content: "Portrait";
+content: "*Category";
 color: white;
 margin-left: 2vh;
 font-size: larger;
@@ -523,7 +523,7 @@ font-weight: 100;
 }
 
 .group::after{
-    content: "Group";
+    content: "*Category";
     color: white;
     margin-left: 2vh;
     font-size: larger;
@@ -531,7 +531,7 @@ font-weight: 100;
     }
 
 .pet::after{
-    content: "Pet";
+    content: "*Category";
     color: white;
     margin-left: 2vh;
     font-size: larger;
@@ -586,3 +586,143 @@ footer{
 }
 
 /* footer end */
+
+@media (max-width: 1032px){
+    .nav h1{
+        font-size: larger;
+    }
+
+    .Nav-items{
+        display: none;
+    }
+
+    .pricing-section{
+        height: auto;
+    }
+
+    
+
+    .card-wrapper{
+        flex-direction: column;
+    }
+
+    .side-left{
+        border: 2px solid black;
+        border-radius: .3rem;
+    }
+
+    .side-right{
+        border: 2px solid black;
+        border-radius: .3rem;
+    }
+
+    .standard h3{
+        font-size: large;
+    }
+
+    .standard label{
+        font-size: larger;
+    }
+
+    .features{
+        font-size: medium;
+    }
+
+    .pricing{
+        background-color: var(--white);
+        color: black;
+
+    }
+
+    .intro-contact , .Contact p{
+        font-size: medium;
+    }
+
+    .Contact form label{
+        font-size: medium;
+    }
+
+    .question{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .radios{
+        row-gap: 5vh;
+
+    }
+
+    .portrait::after,.group::after,.pet::after{
+        
+        font-size: medium;
+        
+        }
+     
+    .question{
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+
+    form .submit{
+        font-size: medium;
+        height: 20%;
+    }
+
+
+    .nav-med{
+        display: block;
+        font-size: small;
+        
+    }
+    .Nav-items:hover{
+        transform: none;
+    }
+
+    .Nav-items a:hover{
+        
+        text-decoration: none;
+        color:aqua;
+    }
+    
+    .port-sub{
+        left: 10%;
+        
+    }
+
+    .div-contact button{
+        font-size: medium;
+    }
+
+    .about-wrapper img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        filter: grayscale(100%);
+    }
+
+   
+
+    .about-head label{
+        display: none;
+    }
+    .about-wrapper{
+        margin-top: 5vh;
+    }
+
+    .about-content h2{
+        display: none;
+       
+    }
+
+    .about-content p{
+        
+        width: fit-content;
+        font-size: small;
+        line-height: 1rem;
+    }
+
+    
+    
+}
